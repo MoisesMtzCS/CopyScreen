@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Copy screen</string>
+    <string name="main_image_play_src">Play</string>
+    <string name="main_add_to_cart">Add to cart</string>
+    <string name="main_save_item">Save</string>
+    <string name="main_color">Color</string>
+    <string name="main_size_selector">Size</string>
+    <string name="main_description">Description</string>
+</resources>
