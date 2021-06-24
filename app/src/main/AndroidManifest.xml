@@ -9,13 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CopyScreen">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".presentation.main.Main1Activity"
+            android:theme="@style/Theme.CopyScreen2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".presentation.desing_profile.ProfileActivity" />
+        <activity
+            android:name=".presentation.desing_details.DetailsProduct"
+            android:theme="@style/Theme.CopyScreen.details" />
+        <activity android:name=".presentation.LoginActivity" android:theme="@style/Theme.login"/>
     </application>
 
 </manifest>

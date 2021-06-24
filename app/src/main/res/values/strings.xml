@@ -6,4 +6,32 @@
     <string name="main_color">Color</string>
     <string name="main_size_selector">Size</string>
     <string name="main_description">Description</string>
+    <string name="app_bar">app_bar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sub_title_home">Diseños</string>
+    <string name="tittle_home">Designs</string>
+    <string name="general_description_home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="description_of_second_interface">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="description_of_first_interface">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="name_profile">Moisés\nMartínez\nMedina</string>
+    <string name="date_of_birth_profile">23 de Octubre de 1999</string>
+    <string name="information">Informacion</string>
+    <string name="description_hobbies_profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="title_activity_autentication">AutenticationActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="welcome">Welcome</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="forgot_password_label">Olvido su contraseña? <b>recuperar</b></string>
+    <string name="title_products_details">Classic jacket</string>
+    <string name="price_of_product_details">$80.00</string>
+    <string name="color_of_product_details">Blue</string>
+    <string name="_23_ratings">23 ratings</string>
+    <string name="description_of_product_details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a faucibus erat.</string>
 </resources>

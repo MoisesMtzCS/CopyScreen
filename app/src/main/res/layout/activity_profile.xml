@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.desing_profile.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color_2"
+                app:menu="@menu/main_menu" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_background_header"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:contentDescription="@null"
+                android:src="@color/background_color_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:lineSpacingMultiplier="0.85"
+                android:textColor="@color/black"
+                android:textSize="56sp"
+                tools:textSize="60sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/siv_profile_picture"
+                tools:text="Moises\nMartinez\nMedina" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siv_profile_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/lateral_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/lateral_margin"
+                        android:text="@string/information"
+                        android:textColor="@color/background_color_2"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_date_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lateral_margin"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Industrial Designer, 85" />
+
+                <TextView
+                    android:id="@+id/tv_hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lateral_margin"
+                    android:layout_marginTop="@dimen/vertical_margin"
+                    android:layout_marginEnd="68dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat justo tempus vehicula viverra. Proin mollis ligula ex, et faucibus ante dapibus vitae. Vestibulum congue dolor sit amet porta cursus." />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/vertical_margin"
+                    android:layout_marginStart="@dimen/lateral_margin"
+                    android:background="@color/cardview_dark_background" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/product_view_holder" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

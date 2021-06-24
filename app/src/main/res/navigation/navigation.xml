@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment2">
+
+    <fragment
+        android:id="@+id/splashFragment2"
+        android:name="cs.med.mtz.moises.copyscreen.presentation.splash.SplashFragment"
+        android:label="activity_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cs.med.mtz.moises.copyscreen.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsProduct"
+            app:destination="@id/detailsProduct" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileActivity"
+            app:destination="@id/profileActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/detailsProduct"
+        android:name="cs.med.mtz.moises.copyscreen.presentation.desing_details.DetailsProduct"
+        android:label="DetailsProduct"
+        tools:layout="@layout/activity_details_products"/>
+
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="cs.med.mtz.moises.copyscreen.presentation.desing_profile.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="cs.med.mtz.moises.copyscreen.presentation.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>

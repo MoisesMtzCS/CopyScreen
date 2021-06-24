@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/background_color"
-                app:menu="@menu/main_menu"/>
+                app:menu="@menu/details_menu" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -41,17 +41,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/image_height"
                         android:contentDescription="@null"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/main_image_placeholder" />
+                        android:src="@drawable/ic_jacket" />
 
-                    <com.google.android.material.button.MaterialButton
-                        style="@style/Widget.MaterialComponents.Button.TextButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end|bottom"
-                        android:layout_marginEnd="@dimen/lateral_margin"
-                        android:layout_marginBottom="@dimen/vertical_margin"
-                        android:text="@string/main_image_play_src" />
 
                 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -64,9 +55,10 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tv_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Classic jacket"
+                        tools:text="Classic jacket"
                         android:textColor="@color/black"
                         android:textSize="@dimen/title_size"
                         android:textStyle="bold" />
@@ -78,10 +70,11 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/tv_price"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:text="$80.00"
+                            tools:text="$80.00"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
 
@@ -121,11 +114,12 @@
                                 android:textColor="@color/black" />
 
                             <TextView
+                                android:id="@+id/tv_color"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end"
                                 android:layout_marginEnd="@dimen/lateral_margin"
-                                android:text="Blue"
+                                tools:text="Blue"
                                 android:textColor="@color/black"
                                 android:textStyle="bold" />
 
@@ -169,7 +163,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="@dimen/half_vertical_margin"
-                            android:text="23 ratings"
+                            android:text="@string/_23_ratings"
                             android:textColor="@color/black"
                             android:textSize="@dimen/small_text_size"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -188,10 +182,11 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
+                        android:id="@+id/tv_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/vertical_margin"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a faucibus erat."
+                        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a faucibus erat."
                         android:textColor="@color/black"
                         android:textSize="@dimen/description_size" />
 
@@ -221,4 +216,3 @@
     </LinearLayout>
 
 </layout>
-
